@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>CSS实现水平垂直同时居中</title>
 </head>
 <style>
-	html,body{
+	html,
+	body {
 		position: relative;
-		width:100%;
-		height:100%;
+		width: 100%;
+		height: 100%;
+		/*5、第五种方法*/
+		/* display: grid;
+		height: 100vh;
+		margin: 0;
+		place-items: center center; */
+
 	}
+
 	/*1、第一种方法*/
 	/*	.son{
 			position: absolute;
@@ -34,9 +43,9 @@
 			height:100px;
 			background: red;
 		}*/
-	
+
 	/*3、第三种方法*/
-/*		html,body{
+	/*		html,body{
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -57,9 +66,16 @@
 			height:100px;
 			background: red;
 		}*/
-
+	/*5、第五种方法*/
+	/* .son {
+		width: 100px;
+		height: 100px;
+		background: red;
+	} */
 </style>
+
 <body>
 	<div class="son"></div>
 </body>
+
 </html>
